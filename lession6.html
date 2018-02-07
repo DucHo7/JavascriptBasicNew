@@ -1,0 +1,74 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <script>
+        var a = 20; b = 10; d = "20";
+        var c = a + b;
+        //1. Arithmentic
+        console.log(c);
+        c = a - b;
+        console.log(c);
+        c = a * b;
+        console.log(c);
+        c = a / b;
+        console.log(c);
+        c = a % b;
+        console.log(c);
+        c++;
+        console.log(c)
+        c--;
+        console.log(c);
+        //document.write(c);
+
+        //2. Comparison - Toán tử so sánh
+        //a1 = a==b;
+        var a2 = a == d;
+        console.log(a2);
+
+        var a2 = a === d;
+        console.log(a2);
+
+        var a2 = a != d;
+        console.log(a2);
+
+        var a2 = a !== d;
+        console.log(a2);
+
+        //3. Logical - Toán tử logic
+        var a3 = !a == d;
+        console.log(a3);//a3 = false
+
+        if (a == d && a == b)
+            console.log('OK');
+        else
+            console.log('NOT OK');//Kết quả NOT OK vì cả điều kiện đúng mới OK
+
+        if (a == d || a == b)
+            console.log('OK');//Kết quả OK vì 1 trong 2 điều kiện đúng là OK
+        else
+            console.log('NOT OK');
+
+        //4. Assignment - Toán tử gán
+        var a4 = 10;
+        a += 10;
+        console.log(a4);
+
+        //5. Ternary - Toán tử 3 ngôi
+        var a5 = a == b ? 1 : 0;
+        console.log(a5);// Kết quả là 0 tại vì a != b.
+
+        var a5 = a !== b ? 1 : 0;
+        console.log(a5);// Kết quả là 1 tại vì a !!= b.
+
+        if (a != b)
+            a5 = 1;
+        else
+            a5 = 0;
+        console.log(a5);
+    </script>
+</body>
+
+</html>
