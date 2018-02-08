@@ -1,0 +1,74 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <!-- 1. Object khai báo bằng 2 dấu ngoặc {} 
+        2. Một object gồm có 2 thành phần là key và value. Mỗi dòng cách nhau bằng 1 dấu phẩy
+    -->
+    <script>//Object trong javascript
+        var emptyObj = {};
+
+        var person = {
+            firstName: "Duc"
+        };
+
+        var messageObj = {
+            showMessage: function (val) {
+                alert(val);
+            }
+        };
+
+        var person1 = {
+            firstName: "Duc",
+            lastName: "Ho",
+            age: 24,
+            getFullName: function () {
+                return this.firstName + ' ' + this.lastName;
+            }
+        };
+
+        for (var key in person1) {
+            console.log(key);
+        }
+
+        function changeReference(person1) {
+            person1.firstName = "Duc 1";
+            person1.lastName = "Ho 1";
+        }
+        changeReference(person1);
+        console.log(person1.getFullName());
+        person12 = {
+            phone: "1232421",
+            email: "gfdeee",
+            street: "Sai Gon"
+        };
+        console.log(person12.street);
+
+        //console.log(person1.getFullName());
+        person1.firstName = "HUTECH";//gán gtri
+        person1["lastName"] = "Javascript";
+        //console.log(person1.getFullName());//get gtri
+        //console.log(person1.firstName + ' ' + person1.lastName);
+
+        var person2 = new Object();
+        person2.firstName = "HUTECH";
+        person2.lastName = "JS";
+        person2.getFullName = function () {
+            return person2.firstName + ' ' + person2.lastName;
+        }
+        console.log(person2.getFullName());
+
+        var person3 = new Object();
+        console.log(person3.firstName);
+        if (person3.hasOwnProperty("firstName")) {
+            console.log(person3.firstName);
+        }
+        else {
+            console.log("This propety is not existed");
+        }//Cách kiểm tra thuộc tính đó có trong object hay không?
+    </script>
+</body>
+
+</html>
