@@ -1,0 +1,36 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <script>//String trong javascript
+        var str1 = new String('String object contents');
+        var str2 = new String('String object contents');
+        var str3 = 'String object contents';
+        var str4 = "in Javascript"
+        console.log(str1 == str2);// Kết quả là false
+        console.log(str1 == str3);// Kết quả là true
+        console.log(str3 + ' ' + str4) //Công chuỗi
+        for (i = 0; i < str3.length; i++) {//length độ dài của chuỗi
+            console.log(str3[i]);
+        }//Lặp tất cả các kí tự trong 1 mảng
+
+        //quotation
+        var str5 = "You said \"Hello\" with me.";
+        console.log(str5);
+        var str6 = "You said 'Hello' with me.";
+        //indexOf: vị trí đầu tiên trong chuỗi. bắt đầu 0
+        console.log(str6.indexOf("Hello"));
+        //lastIndexOf: vị trí cuối cùng trong chuỗi
+        console.log(str6.lastIndexOf("t"));
+        //replace: Thay thế
+        console.log(str6.replace("t", "v"));
+        //toLowerCase: chuyển tất cả chuỗi kí tự qua chữ thường
+        console.log(str6.toLowerCase());
+        //toUpperCase: chuyển tất cả chuỗi kí tự qua chữ in hoa
+        console.log(str6.toUpperCase());
+    </script>
+</body>
+
+</html>
