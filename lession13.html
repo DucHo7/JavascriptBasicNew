@@ -1,0 +1,39 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <script>//Array in JS
+        //the first way
+        var arr1 = [1,2,3,4,5,6,7,9,8];
+        var arr2 = ["one", "two", "three","four","five"];
+        var arr3 = [1234,"Duc", true];
+        console.log(arr3);
+        console.log(arr3[1]);//Truy cập đến giá trị ví trị thứ 1
+        console.log(arr1.sort());//Sắp xếp mảng tăng dần
+        console.log(arr1.reverse());//Sắp xếp mảng giảm dần
+        console.log(arr1.pop(0)); //Cắt kí tự có vị trí 0 trong mảng
+        console.log(arr1);
+        console.log(arr1.push(1)); //Đẩy kí tự 1 vào trong mảng
+        console.log(arr1);
+        //the second way
+        var arr4 = new Array();
+        arr4[0] = "Spring";
+        arr4[1] = "Summer";
+        arr4[2] = "Autumn";
+        arr4[3] = "Winter";
+        console.log(arr4);
+        var arr5 = new Array(3);
+        arr5[0] = "Past";
+        arr5[1] = "Present";
+        arr5[2] = "Future";
+        console.log(arr5);
+
+        for(var i=0;i<arr5.length;i++){
+            console.log(arr5[i]);
+        }
+    </script>
+</body>
+
+</html>
