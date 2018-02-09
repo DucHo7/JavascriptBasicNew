@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title>AAA</title>
+</head>
+
+<body>
+    <!-- Hoisting trong JS
+    1. Là 1 khái niệm trong JS
+    -->
+    <div id="errorMessage"></div>
+    <script>
+        "use strict";
+        alert(x());
+        var x = 1;
+
+        function x() {
+            alert(2);
+        }
+
+    </script>
+</body>
+
+</html>
