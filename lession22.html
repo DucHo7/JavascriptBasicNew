@@ -1,0 +1,30 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <div id="errorMessage"></div>
+    <script>
+        try {
+            var a = 10;
+            var b = 0;
+            var result = a / b;
+            //alert(result);
+            // throw "Error when divi a with b"//lấy ra lỗi
+            throw {
+                code: 101,
+                message: "Error division"
+            };
+        }
+        catch (ex) {//xử lý lỗi
+            // alert(ex.message);
+            document.getElementById("errorMessage").innerHTML = ex.message;
+        }
+        finally {
+            console.log('Finally block executed.');
+        }
+    </script>
+</body>
+
+</html>
