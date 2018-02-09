@@ -1,0 +1,42 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <script>//If else in JS
+        // if (1 > 0) {
+        //     alert("1 > 0");
+        // }
+
+        // if (1 == 0) {
+        //     alert('1==0');
+        // }
+        // else {
+        //     alert('1 is not equal to 0');
+        // }
+
+        // var a = 500;
+        // var b = 1000;
+        // if (a > b) {
+        //     alert('500 > 1000');
+        // }
+        // else if (a < b) {
+        //     alert('500 < 1000');
+        // }//Kiểm tra nếu đk đầu tiên đúng thì dừng. Nếu điều kiện đầu tiên sai tiếp tục kiểm tra điều kiện 2 nếu đúng thì dừng
+
+        var age = prompt('Please type your age?')
+        var ageNumber = parseInt(age);//Chuyển kiểu chuỗi thành kiểu số
+        if (ageNumber < 16) {
+            alert('You don\'t have to access this page.');
+        }
+        else if (ageNumber < 18) {
+            alert('You have restricted permission to access this page.');
+        }
+        else {
+            alert('Welcome to my page :)');
+        }
+    </script>
+</body>
+
+</html>
