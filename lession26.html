@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>Welcome to my page</title>
+</head>
+
+<body>
+    <!-- Hiểu sâu về Object trong JS
+    
+    -->
+    <div id="errorMessage"></div>
+    <script>
+        function Person() {
+            this.firstName = "";
+            this.lastName = "";
+            this.age = 0;
+        }
+        var person1 = new Person();
+        person1.firstName = "Duc";
+        person1.lastName = "Ho";
+        person1.age = 24;
+        // console.log(Object.keys(person1));
+        // for (var prop in person1) {
+        //     console.log(prop);
+        // }
+        console.log(Object.getOwnPropertyDescriptor(person1, "firstName"));
+        Object.defineProperty(person1, "firstName", {
+            writable: false,
+            enumerable: false,
+            //configurable: false,
+        });
+        console.log(Object.getOwnPropertyDescriptor(person1, "firstName"));
+        console.log(Object.keys(person1));
+    </script>
+</body>
+
+</html>
