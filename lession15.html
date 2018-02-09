@@ -1,0 +1,53 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <script>//Functions in JS
+        //1. Một function viết 1 lần và dùng nhiều lần
+        //2. 
+        // function ShowMessage(){
+        //     alert('Hello World');
+        // }//Khai báo
+        // ShowMessage();//Gọi function ra
+        // ShowMessage();
+        // ShowMessage();//Sử dụng nhiều lần
+        function ShowMessage(firstName, lastName) {//Truyền 1 or nhiều parameter và gọi tương ứng
+            //alert("Hello " + firstName + " " + lastName);
+            alert("Hello " + arguments[0] + " " + arguments[1]);
+            return "1";
+        }//Khai báo
+        // ShowMessage();
+        // ShowMessage("Duc");
+        //ShowMessage("Ho", "Duc");//Sử dụng nhiều lần
+        // ShowMessage("Ho", "Duc", "HUTECH");
+        //var a = ShowMessage();
+        //console.log(a);
+
+        //calculate
+        // function calculate() {
+        //     function add(a, b) {
+        //         return a + b;
+        //     }
+        //     return add;
+        // }//return 1 hàm
+        // var add = calculate();
+        // console.log(add(10,20));
+
+        var add = function sum(a, b) {
+            return a + b;
+        }
+        console.log(add(12, 11));
+        //console.log(sum(12,11));
+
+        var add = function (a, b) {//hàm nặc danh không cần tên function
+            return a + b;
+        }
+        console.log(add(12, 11));
+    </script>
+</body>
+<!-- JS cho phép định nghĩa khối code đưa ra tên và thực thi nhiều lần
+1 function bao gồm 1 or nhiều paramater -->
+
+</html>
