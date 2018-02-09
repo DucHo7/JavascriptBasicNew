@@ -1,0 +1,38 @@
+<html>
+
+<head>
+</head>
+<!-- 
+    1. JS có global scope and local scope
+    2. Global là khai báo bên ngoài. Local khai báo bên trong cùng tên không ảnh hưởng tới nhau
+-->
+
+<body>
+    <script>//Scope in JS
+        var userName = "Duc";
+
+        function modifyUsername() {
+            userName = "Duc 1";
+            //var userName1 ="Duc 2";//Biến local k sử dụng được trong function khác
+            userName1 = "Duc 2";
+        }
+        function showUserName() {
+            console.log(userName);
+            console.log(userName1);
+        }
+        //showUserName();
+        modifyUsername();
+        showUserName();
+
+        if (userName) {
+            var a = 1;
+        }
+        console.log(a);
+
+        for (var i = 0; i < 10; i++) {
+        }
+        console.log(i);
+    </script>
+</body>
+
+</html>
