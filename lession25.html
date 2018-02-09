@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <title>Welcome to my page</title>
+</head>
+
+<body>
+    <!-- Class trong JS
+    
+    -->
+    <div id="errorMessage"></div>
+    <script>
+        // function Person(_firstName, _lastName, _age) {
+        //     this.firstName = _firstName;
+        //     this.lastName = _lastName;
+        //     this.age = _age;
+        //     this.getFullName = function () {
+        //         return this.firstName + ' ' + this.lastName;
+        //     }
+        // }
+
+        // person1 = new Person("Ho", "Sy Duc", 24);
+        // // person1.firstName = "Ho";
+        // // person1.lastName = "Sy Duc";
+        // console.log(person1.firstName + ' ' + person1.lastName);
+
+        // person2 = new Person("Nguyen", "Van A", 15);
+        // // person2.firstName = "Nguyen";
+        // // person2.lastName = "Van A";
+        // console.log(person2.getFullName());
+
+        function Person() {
+            var _firstName = "unknown";
+            var _lastName = "unknown";
+
+            Object.defineProperties(this, {
+                "FirstName": {
+                    set: function (value) {
+                        _firstName = value;
+                    },
+                    get: function () {
+                        return _firstName;
+                    }
+                },
+                "LastName": {
+                    set: function (value) {
+                        _lastName = value;
+                    },
+                    get: function () {
+                        return _lastName;
+                    }
+                }
+            });
+        }
+        var person1 = new Person();
+        person1.FirstName = "Duc";
+        person1.LastName = "Ho";
+        console.log(person1.FirstName + ' ' + person1.LastName);
+
+    </script>
+</body>
+
+</html>
