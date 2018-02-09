@@ -1,0 +1,29 @@
+<html>
+
+<head>
+</head>
+<!-- 
+        1. Eval là 1 global function in JS dùng để đánh giá lấy kết quả của String
+        2. Eval tra về 1 object.
+        3. Eval gọi 1 hàm gán kết quả
+    -->
+
+<body>
+    <script>//Eval in JS
+        var result;
+        function Sum(a, b) {
+            return a + b;
+        }
+        eval('result = Sum(10,12);');
+        alert(result);
+
+        var obj = "({firstName:'Duc', lastName:'Ho'})";
+        var json = eval(obj);//convert 1 string sang đối tượng json
+        console.log(json.lastName + ' ' + json.firstName);
+    </script>
+</body>
+<!-- 
+    1.Không nên sử dụng hàm eval vì chậm, không bảo mật và k thể đọc được
+ -->
+
+</html>
